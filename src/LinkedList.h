@@ -20,14 +20,15 @@
 #define _LINKED_LIST_H_
 
 /************************ Defines and typedefs *******************************/
+
+/*! Structure for node */
 typedef struct node {
   struct node* next;
   void* data;
 } node;
 
+/*! Pointer to the node */
 typedef node *link;
-
-#define next_node(X)
 
 /********************** Global Functions Declarations ************************/
 
@@ -43,6 +44,21 @@ link create_node(void* data);
  * \param _link Poinder to node
  */
 void destroy_node(link *_link);
+
+/*!
+ * \brief Add new node to the next
+ * \param _link where new node should be attached
+ * \param _new_node to attach
+ * \return link to the attached node
+ */
+link add_node(link _link);
+
+/*!
+ * \brief Add new node at the end of
+ * \param _link to remove
+ * \return removed node which should be deleted by destroy_node
+ */
+link remove_node(link _link);
 
 #ifdef _DEBUG
 void printLinkedList();
