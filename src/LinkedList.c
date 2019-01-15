@@ -1,3 +1,21 @@
+/******************************************************************************
+ *  Name: LinkedList.h
+ *
+ *  Compilation:
+ *  Execution:
+ *  Dependencies:
+ *  Data files:
+ *
+ *  Abstract:
+ *      This is a singly-linked list.
+ *
+ *  Author:
+ *      Rusakova Anastasiia
+ *
+ *  Change Log:
+ *      14-Jan-2019: Created base fuctionality of linked list
+ *
+ ******************************************************************************/
 #include <errno.h>
 #include <stdlib.h>
 #include "LinkedList.h"

@@ -31,8 +31,17 @@ typedef node *link;
 
 /********************** Global Functions Declarations ************************/
 
-//TBD change result value with more independent
+/*!
+ * \brief Allocate memory for a new node
+ * \param data which would be linked to the node
+ * \return pointer to newly created node
+ */
 link create_node(void* data);
+
+/*!
+ * \brief Destroy memory with node
+ * \param _link Poinder to node
+ */
 void destroy_node(link *_link);
 
 #ifdef _DEBUG
