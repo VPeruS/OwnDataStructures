@@ -1,0 +1,41 @@
+---
+:source:
+  :path: test
+  :file: TestNode.c
+:successes:
+- :test: testNodeShouldBeCreated
+  :line: 14
+  :message: ''
+- :test: testNodeShouldBeDestroyed
+  :line: 21
+  :message: ''
+- :test: testNodeAdded
+  :line: 30
+  :message: ''
+- :test: testNodeAddedThreeTimes
+  :line: 45
+  :message: ''
+- :test: testAddNodeParentNull
+  :line: 62
+  :message: ''
+- :test: testAddNodeChildNull
+  :line: 71
+  :message: ''
+- :test: testNodeRemovedAtTheEnd
+  :line: 81
+  :message: ''
+- :test: testNodeRemovedBeginning
+  :line: 101
+  :message: ''
+- :test: testNodeRemovedInTheMiddle
+  :line: 121
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 9
+  :passed: 9
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.0009194640001624066

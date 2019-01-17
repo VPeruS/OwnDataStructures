@@ -16,8 +16,8 @@
  *      14-Jan-2019: Created base fuctionality of linked list
  *
  ******************************************************************************/
-#ifndef _LINKED_LIST_H_
-#define _LINKED_LIST_H_
+#ifndef _NODE_H_
+#define _NODE_H_
 
 /************************ Defines and typedefs *******************************/
 

@@ -18,7 +18,7 @@
  ******************************************************************************/
 #include <errno.h>
 #include <stdlib.h>
-#include "LinkedList.h"
+#include "Node.h"
 
 link create_node(void* data) {
 

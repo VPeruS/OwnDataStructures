@@ -1,7 +1,7 @@
 #include <string.h>
 
 #include "unity.h"
-#include "LinkedList.h"
+#include "Node.h"
 
 void setUp(void)
 {
