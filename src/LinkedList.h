@@ -51,19 +51,15 @@ void destroy_node(link *_link);
  * \param _new_node to attach
  * \return link to the attached node
  */
-link add_node(link _link);
+link add_node(link _link, link _new_node);
 
 /*!
  * \brief Add new node at the end of
- * \param _link to remove
+ * \param _parent_link where link to remove connected
+ * \param _to_remove link for removing
  * \return removed node which should be deleted by destroy_node
  */
-link remove_node(link _link);
-
-#ifdef _DEBUG
-void printLinkedList();
-#endif
-
+link remove_node(link _parent_link, link _to_remove);
 
 /*
  * TBD: Iterator

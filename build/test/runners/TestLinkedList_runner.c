@@ -37,6 +37,13 @@ extern void setUp(void);
 extern void tearDown(void);
 extern void testNodeShouldBeCreated(void);
 extern void testNodeShouldBeDestroyed(void);
+extern void testNodeAdded(void);
+extern void testNodeAddedThreeTimes(void);
+extern void testAddNodeParentNull(void);
+extern void testAddNodeChildNull(void);
+extern void testNodeRemovedAtTheEnd(void);
+extern void testNodeRemovedBeginning(void);
+extern void testNodeRemovedInTheMiddle(void);
 
 
 /*=======Suite Setup=====*/
@@ -73,6 +80,13 @@ int main(void)
   UnityBegin("TestLinkedList.c");
   RUN_TEST(testNodeShouldBeCreated, 14);
   RUN_TEST(testNodeShouldBeDestroyed, 21);
+  RUN_TEST(testNodeAdded, 30);
+  RUN_TEST(testNodeAddedThreeTimes, 45);
+  RUN_TEST(testAddNodeParentNull, 62);
+  RUN_TEST(testAddNodeChildNull, 71);
+  RUN_TEST(testNodeRemovedAtTheEnd, 81);
+  RUN_TEST(testNodeRemovedBeginning, 101);
+  RUN_TEST(testNodeRemovedInTheMiddle, 121);
 
   return suite_teardown(UnityEnd());
 }

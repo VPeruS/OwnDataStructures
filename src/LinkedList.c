@@ -38,3 +38,35 @@ void destroy_node(link *_link) {
       *_link = NULL;
     }
 }
+
+link add_node(link _link, link _new_node) {
+
+  //if parent link is empty - return new node as first
+  if(_link == NULL) {
+      return _new_node;
+    }//if
+
+  //if child link is empty - nothing to add - return
+  if(_new_node == NULL) {
+      return _link;
+    }
+
+  _link->next = _new_node;
+
+  return _link->next;
+}
+
+link remove_node(link _parent_link, link _to_remove) {
+  //Nothing to remove
+  if(_to_remove == NULL) {
+      return NULL;
+    }
+
+  if(_parent_link != NULL) {
+      _parent_link->next = _to_remove->next;
+    }
+
+  _to_remove->next = NULL;
+
+  return _to_remove;
+}
